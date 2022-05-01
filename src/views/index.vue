@@ -5,6 +5,7 @@
 		<about-us/>
 		<choose-us/>
 		<values/>
+		<partners/>
 	</default-layout>
 </template>
 
@@ -15,6 +16,7 @@ import cta from '@/components/landing/cta.vue'
 import aboutUs from '@/components/landing/aboutUs.vue'
 import chooseUs from '@/components/landing/chooseUs.vue'
 import values from '@/components/landing/values.vue'
+import partners from '@/components/landing/partners.vue'
 
 
 </script>

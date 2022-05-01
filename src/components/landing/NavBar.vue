@@ -1,16 +1,16 @@
 <template>
 	<nav class="relative z-30  select-none -[72px]">
 		<div
-			class="container flex flex-wrap items-center justify-between py-5 px-4 mx-auto md:flex-row max-w-7xl"
+			class="container flex flex-wrap items-center justify-between md:py-5 py-3 px-4 mx-auto md:flex-row max-w-7xl"
 		>
 			<router-link
 				to="/"
 				class="relative flex items-center w-auto text-xl font-extrabold tracking-widest text-blue select-none"
-			><img src="@/assets/images/logo.svg" alt=""></router-link>
+			><img src="@/assets/images/logo.svg" alt="logo" class="h-8 md:h-auto"></router-link>
 
 			<div
 				@click="showMenu = !showMenu"
-				class="flex flex-col items-center justify-center p-3 bg-white border-2 text-primary
+				class="flex flex-col items-center justify-center p-1.5 bg-white border-2 text-primary
 				 border-primary rounded-full cursor-pointer mobile text-lg"
 			>
 				<i class="las la-bars " 	v-if="!showMenu"></i>
@@ -19,7 +19,7 @@
 
 
 			<transition name="slideUp">
-				<div v-if="showMenu" class="w-full gap-4 absolute bg-[#ffffff] shadow-2xl top-20 inset-x-0 p-4">
+				<div v-if="showMenu" class="w-full gap-4 absolute bg-[#ffffff] shadow-2xl top-14 inset-x-0 p-4">
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Home</button>
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">About Us</button>
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Why Choose Us</button>
