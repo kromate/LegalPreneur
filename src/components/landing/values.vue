@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto md:py-28 py-10 px-4">
+	<div class="container mx-auto md:py-28 py-10 px-4" id="values">
 	
 		<section class="md:py-28 py-12 bg-white md:px-0 " >
 			<div class="container items-center  mx-auto">

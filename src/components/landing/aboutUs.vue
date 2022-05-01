@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto md:py-28 py-10 px-4">
+	<div class="container mx-auto md:py-28 py-10 px-4" id="about">
 		<div class="relative">
 			<h2 class="pb-2.5 md:text-5xl text-3xl px-3  max-w-full font-extrabold text-center">About us</h2>
 		</div>

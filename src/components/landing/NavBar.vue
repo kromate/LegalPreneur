@@ -20,21 +20,21 @@
 
 			<transition name="slideUp">
 				<div v-if="showMenu" class="w-full gap-4 absolute bg-[#ffffff] shadow-2xl top-14 inset-x-0 p-4">
-					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Home</button>
-					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">About Us</button>
-					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Why Choose Us</button>
-					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Our Values</button>
-					<button @click="navigate('#footer')"	class="btn rounded-none py-3 w-full mt-2">Expertise</button>
+					<a href="#"	 @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Home</a>
+					<a href="#about" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">About Us</a>
+					<a href="#choose" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Why Choose Us</a>
+					<a href="#values" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Our Values</a>
+					<a href="#exp" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Expertise</a>
 				
 				</div>
 			</transition>
 
 			<div class=" pc">
-				<button	class="btn-secondary pc">Home</button>
-				<button	class="btn-secondary pc">About Us</button>
-				<button	class="btn-secondary pc">Why Choose Us</button>
-				<button	class="btn-secondary pc">Our Values</button>
-				<a	class="btn-secondary pc" href="#footer">Expertise</a>
+				<a href="#"	class="btn-secondary pc">Home</a>
+				<a href="#about"	class="btn-secondary pc">About Us</a>
+				<a href="#choose"	class="btn-secondary pc">Why Choose Us</a>
+				<a href="#values"	class="btn-secondary pc">Our Values</a>
+				<a href="#exp"	class="btn-secondary pc" >Expertise</a>
 		
 			</div>
 

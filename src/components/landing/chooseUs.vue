@@ -1,5 +1,5 @@
 <template>
-	<section class="bg-blue">
+	<section class="bg-blue" id="choose">
 		<div class="container mx-auto md:py-28 py-10 px-4 md:px-0">
 			<section class="py-12 md:px-0 " >
 
