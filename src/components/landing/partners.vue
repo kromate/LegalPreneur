@@ -1,5 +1,5 @@
 <template>
-	<section class="bg-blue p-10 px-4">
+	<section class="bg-blue p-12 px-4">
 		<div class="container mx-auto ">
 			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our trusted partners. </h1>
 			<div class="flex items-center justify-between md:px-36">

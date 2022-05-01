@@ -6,6 +6,8 @@
 		<choose-us/>
 		<values/>
 		<partners/>
+		<expertise/>
+		<footer/>
 	</default-layout>
 </template>
 
@@ -17,6 +19,9 @@ import aboutUs from '@/components/landing/aboutUs.vue'
 import chooseUs from '@/components/landing/chooseUs.vue'
 import values from '@/components/landing/values.vue'
 import partners from '@/components/landing/partners.vue'
+import expertise from '@/components/landing/exp.vue'
+import footer from '@/components/landing/footer.vue'
+
 
 
 </script>

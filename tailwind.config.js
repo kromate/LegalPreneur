@@ -12,7 +12,7 @@ module.exports = {
 				blue:'#F6F9FF'
 			},
 			boxShadow: {
-				block: '0 20px rgba(0,0,0,0.8)',
+				block: '0px 6.96864px 27.8746px rgba(0, 0, 0, 0.05)',
 			},
 		},
 	},
