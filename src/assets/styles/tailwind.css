@@ -8,6 +8,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
   width: 5px; /* Remove scrollbar space */
@@ -24,7 +27,7 @@
 
 @layer components {
   .btn {
-    @apply flex items-center justify-center px-6 py-2 text-base font-medium leading-6 text-white bg-primary rounded-full;
+    @apply flex items-center justify-center px-6 py-2 text-base font-medium leading-6 text-white bg-primary rounded-[10px];
   }
   .btn-secondary {
     @apply inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 bg-white text-dark rounded-full;
@@ -43,5 +46,8 @@
   }
   .badge{
   @apply  text-xs px-3  rounded-full py-[0.2rem] flex justify-center items-center
+  }
+  .input{
+    @apply px-4 py-3 font-medium rounded-[10px] max-w-[504px] text-dark
   }
 }

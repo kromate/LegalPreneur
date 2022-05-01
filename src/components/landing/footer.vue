@@ -1,43 +1,115 @@
 <template>
-	<div class="container mx-auto md:py-28 py-10 px-4">
-		<div class="relative">
+	<div class="bg-dark px-4" id="footer">
+		<!-- <div class="relative">
 			<h2 class="pb-2.5 md:text-5xl text-3xl px-3  max-w-full font-extrabold text-center">About us</h2>
-		</div>
+		</div> -->
 		
 
-		<section class="md:py-28 py-12 bg-white md:px-0 " >
-			<div class="container items-center  mx-auto">
-				<div class="flex flex-wrap-reverse items-center sm:-mx-3">
+		<section class="md:pt-28 pt-12 pb-0  md:px-0 text-white" >
+			<div class="container items-center  mx-auto mb-20">
+				<div class="flex flex-wrap items-center">
 					<div class="w-full md:w-1/2 md:px-3">
 						<div class="w-full">
-							<div class="relative mb-8">
-								<h2 class="pb-2.5 md:text-5xl text-3xl   max-w-full font-extrabold text-left">Who we are</h2>
+							<div class="relative mb-5">
+								<h2 class="pb-2.5 md:text-4xl text-3xl   max-w-full font-extrabold text-left">Contact us</h2>
 							</div>
-							<p class=" !leading-[25.6px] text-sm text-gray-500 md:max-w-[570px] lg:text-base ">
-								Legalpreneur Consulting is a full service law firm located in Nigeria. 
-								We are adapted to provide uniquely innovative solutions to clients and uncover the opportunities in the changing landscape. We provide the legal advice you need for the fast-changing and inter-connected world. We work closely with our clients, both Nigerian and international to provide specialist legal advice fuelled by a practical understanding of clients needs and the regulatory landscapes.
-                                 
-							</p>
-							<div class="relative flex flex-col sm:flex-row sm:space-x-4">
-								<router-link to="#footer" class="text-primary mt-11 font-semibold flex items-center">
-									Contact us for a free consultation! 
-									<i class="las la-arrow-right text-xl ml-4"></i>
-								</router-link>
-							</div>
+							<div class="text-sm w-[401px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</div>
+						
+							<form action="">
+								<div class="flex flex-col w-full mt-12">
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1"> Your name </label>
+									<div class="flex items-center w-full">
+										<input name="name" class="input w-full"	placeholder="Enter your name" v-model="detail.name"	required/>
+									</div>
+								</div>
+								<div class="flex flex-col w-full mt-5">
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1"> Your email </label>
+									<div class="flex items-center w-full">
+										<input name="name" type="email" class="input w-full"	placeholder="Enter your email" v-model="detail.email"	required/>
+									</div>
+								</div>
+								<div class="flex flex-col w-full mt-5">
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1"> Message </label>
+									<div class="flex items-center w-full">
+										<textarea rows="6" name="name" class="input w-full"	placeholder="Type here..." v-model="detail.name"	required/>
+									</div>
+								</div>
+
+								<button class="btn mt-5">send</button>
+							</form>
+						
 						</div>
 					</div>
 
-					<div class="w-full md:w-1/2 pb-12 md:p-0">
-						<img src="@/assets/images/about.png" class="md:ml-auto">
+					<div class="w-full md:w-1/2 pb-12 md:p-0 mt-12 md:pl-12">
+						<div class="md:ml-auto flex flex-col ">
+							<h5 class="text-xl font-semibold">Contact info:</h5>
+							<div class="flex items-center mt-4">
+								<i class="las la-map-marker-alt text-primary text-2xl mr-3"></i>
+								<span class="text-sm">Lagos, Nigeria</span>
+							</div>
+							<div class="flex items-center mt-4">
+								<i class="las la-phone text-primary text-2xl mr-3"></i>
+								<span class="text-sm">+234 812 345 6786</span>
+							</div>
+							<div class="flex items-center mt-4">
+								<i class="las la-envelope text-primary text-2xl mr-3"></i>
+								<span class="text-sm">legalpreneue@gmail.com</span>
+							</div>
+						</div>
+
+						<div class="md:ml-auto flex flex-col mt-7">
+							<h5 class="text-xl font-semibold">Follow us:</h5>
+							<div class="flex items-center mt-4 gap-5">
+								<a href="#">
+									<i class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
+								</a>
+							
+								<a href="#">
+									<i class="lab la-twitter text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
+								</a>
+							
+								<a href="#">
+									<i class="lab la-linkedin text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
+								</a>
+							
+								<a href="#">
+									<i class="lab la-instagram text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
+								</a>
+							
+							
+
+							</div>
+						
+						</div>
 					</div>
 				</div>
+			</div>
+
+			<div class="border-t -mx-4">
+				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap">
+					<p class="font-medium text-sm">© 2022 Legalprenuer Company Limited, All rights reserved</p>
+
+					<div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
+						<p>Powered by</p>
+						<img src="../../assets/images/powered.svg" alt="powered by" class="bg-white px-2.5 py-1 md:ml-9 mt-2">
+					</div>
+				</div>
+			
 			</div>
 		</section>
 	</div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 
+
+const detail = {
+	name: ref('').value,
+	email:ref('').value,
+	message:ref('').value
+}
 </script>
 
 <style scoped>

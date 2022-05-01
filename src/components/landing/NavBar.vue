@@ -24,7 +24,7 @@
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">About Us</button>
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Why Choose Us</button>
 					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Our Values</button>
-					<button @click="navigate('/')"	class="btn rounded-none py-3 w-full mt-2">Expertise</button>
+					<button @click="navigate('#footer')"	class="btn rounded-none py-3 w-full mt-2">Expertise</button>
 				
 				</div>
 			</transition>
@@ -34,7 +34,7 @@
 				<button	class="btn-secondary pc">About Us</button>
 				<button	class="btn-secondary pc">Why Choose Us</button>
 				<button	class="btn-secondary pc">Our Values</button>
-				<button	class="btn-secondary pc">Expertise</button>
+				<a	class="btn-secondary pc" href="#footer">Expertise</a>
 		
 			</div>
 
