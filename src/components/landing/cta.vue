@@ -14,7 +14,7 @@
 
 <style scoped>
 .bg{
-background:  rgba(0, 0, 0, 0.3) url('../../assets/images/bg.png');
+background:  #ffffffaf url('../../assets/images/bg.png');
 }
 
 h2:before{

@@ -30,11 +30,11 @@
 			</transition>
 
 			<div class=" pc">
-				<a href="#"	class="btn-secondary pc">Home</a>
-				<a href="#about"	class="btn-secondary pc">About Us</a>
-				<a href="#choose"	class="btn-secondary pc">Why Choose Us</a>
-				<a href="#values"	class="btn-secondary pc">Our Values</a>
-				<a href="#exp"	class="btn-secondary pc" >Expertise</a>
+				<a href="#"	class="btn-secondary pc hover:text-primary">Home</a>
+				<a href="#about"	class="btn-secondary pc hover:text-primary">About Us</a>
+				<a href="#choose"	class="btn-secondary pc hover:text-primary">Why Choose Us</a>
+				<a href="#values"	class="btn-secondary pc hover:text-primary">Our Values</a>
+				<a href="#exp"	class="btn-secondary pc hover:text-primary" >Expertise</a>
 		
 			</div>
 
