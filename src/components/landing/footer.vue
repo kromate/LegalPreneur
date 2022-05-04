@@ -54,7 +54,7 @@
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-envelope text-primary text-2xl mr-3"></i>
-								<span class="text-sm">legalpreneue@gmail.com</span>
+								<span class="text-sm">contact@legalprenuerconsulting.com</span>
 							</div>
 						</div>
 
@@ -97,7 +97,7 @@
 				</div>
 			
 			</div>
-		</section>
+		</section>P
 	</div>
 </template>
 
