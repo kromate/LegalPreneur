@@ -25,8 +25,12 @@ import partners from '@/components/landing/partners.vue'
 import expertise from '@/components/landing/exp.vue'
 import footerBar from '@/components/landing/footer.vue'
 
+import { useMeta } from 'vue-meta'
 
-
+   useMeta({
+      title: 'Legalprenuer Consulting',
+      htmlAttrs: { lang: 'en', amp: true }
+    })
 </script>
 
 <style scoped>
