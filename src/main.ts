@@ -1,14 +1,15 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import "@/assets/styles/tailwind.css";
-import { router as setupRouter } from "@/router";
+import { createApp } from 'vue'
+import App from './App.vue'
+import '@/assets/styles/tailwind.css'
+import { createMetaManager } from 'vue-meta'
+import { router as setupRouter } from '@/router'
 
 const init = async () => {
-    const router = await setupRouter;
-    const app = createApp(App);
+    const router = await setupRouter
+    const app = createApp(App)
     // await router.isReady()
 
-    app.use(router).mount("#app");
-};
+    app.use(router).use(createMetaManager()).mount('#app')
+}
 
-init().then();
+init().then()

@@ -15,6 +15,8 @@
 <style scoped>
 .bg{
 background:  #ffffffaf url('../../assets/images/bg.png');
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 h2:before{
