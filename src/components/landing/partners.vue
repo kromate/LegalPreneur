@@ -2,26 +2,27 @@
 	<section class="bg-blue p-12 px-4">
 		<div class="container mx-auto ">
 			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our trusted partners. </h1>
-			<div class="flex items-center justify-between md:px-36">
-				<div class="flex items-center justify-center">
+			<div class="relative marquee-container flex gap-12">
+				<div class="marquee flex items-center justify-between  mt-0  flex-nowrap gap-12">
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/1.png" alt="Disney Plus" class="block object-contain h-20">
-				</div>
-				<div class="flex items-center justify-center">
+					<!-- </div> -->
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/2.png" alt="Disney Plus" class="block object-contain h-20">
-				</div>
-				<div class="flex items-center justify-center">
+					<!-- </div> -->
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/3.png" alt="Disney Plus" class="block object-contain h-20">
-				</div>
-				<div class="flex items-center justify-center">
+					<!-- </div> -->
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/4.png" alt="Disney Plus" class="block object-contain h-20">
-				</div>
-				<div class="flex items-center justify-center">
+					<!-- </div> -->
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/5.png" alt="Disney Plus" class="block object-contain h-20">
-				</div>
-				<div class="flex items-center justify-center">
+					<!-- </div> -->
+					<!-- <div class="flex items-center justify-center"> -->
 					<img src="@/assets/images/partners/6.png" alt="Disney Plus" class="block object-contain h-20">
+					<!-- </div> -->
 				</div>
-		
 			</div>
 		</div>
 	</section>
@@ -31,6 +32,52 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped> 
+.marquee-container {
+  height: 5rem;
+  overflow: hidden;
+  line-height: 30px;
+  width: 100%;
+    // @media screen and (max-width: 1024px) {
+	// 	height:auto;
+	// }
+
+}
+.marquee-container .marquee {
+  top: 0;
+  left: 100%;
+   width: 100%;
+//   overflow: hidden;
+  position: absolute;
+  animation: marquee 25s linear infinite;
+
+//   @media screen and (max-width: 1024px) {
+// 	animation: none;
+// 	position: relative;
+// 	left: 0;
+// 	display: flex;
+
+//   }
+	  
+  
+}
+.marquee-container .marquee2 {
+  animation-delay: 10s;
+//     @media screen and (max-width: 1024px) {
+// 	 animation-delay: 15s;
+//   }
+}
+.marquee-container b {
+  padding-left: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
 
 </style>
