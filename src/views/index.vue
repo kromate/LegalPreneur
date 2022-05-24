@@ -1,6 +1,6 @@
 <template>
 	<metainfo>
-		<template v-slot:title="{ content }">{{ content ? `${content} | SITE_NAME` : `SITE_NAME` }}</template>
+		<template v-slot:title="{ content }">{{ content ? `${content}` : `SITE_NAME` }}</template>
 	</metainfo>
 	<default-layout>
 		<nav-bar/>
@@ -27,10 +27,10 @@ import footerBar from '@/components/landing/footer.vue'
 
 import { useMeta } from 'vue-meta'
 
-   useMeta({
-      title: 'Legalprenuer Consulting',
-      htmlAttrs: { lang: 'en', amp: true }
-    })
+useMeta({
+	title: 'Legalprenuer Consulting',
+	htmlAttrs: { lang: 'en', amp: true }
+})
 </script>
 
 <style scoped>
