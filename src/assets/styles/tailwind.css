@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root{
-    --clr-bgOne: #ffffffaf url('../../assets/images/bg.png');
-    --clr-bgTwo: #ffffffaf url('../../assets/images/bg2.png');
+    --clr-bgOne: url('../../assets/images/bg.png');
+    --clr-bgTwo: url('../../assets/images/bg2.png');
 }
 @media  (max-width:640px) {
     :root{
-    --clr-bgOne: #ffffffaf url('../../assets/images/mbg.png');
-    --clr-bgTwo: #ffffffaf url('../../assets/images/mbg2.png');
+    --clr-bgOne: url('../../assets/images/mbg.png');
+    --clr-bgTwo: url('../../assets/images/mbg2.png');
 }
 }
 

@@ -17,9 +17,11 @@
 <style scoped>
 
 .bg{
-/* background:  #ffffffaf url('../../assets/images/bg.png'); */
-background-repeat: no-repeat;
+/* background:  #ffffffaf url('../../assets/images/mbg.png'); */
+background-repeat: no-repeat !important;
 background-size: cover;
+background-origin: border-box;
+background-position: 50% 50%;
 animation: changeBG 17s  infinite both;
 }
 text:before{
@@ -30,14 +32,14 @@ text:before{
 @keyframes changeBG {
     0%{
         opacity: 1;
-        background:  var(--clr-bgOne);
+        background-image:  var(--clr-bgOne);
     }
     50%{
-         background:  var(--clr-bgTwo);
+         background-image:  var(--clr-bgTwo);
     }
     100%{
         opacity: 1;
-         background:  var(--clr-bgOne);
+         background-image:  var(--clr-bgOne);
     }
 }
 @keyframes changeText {
