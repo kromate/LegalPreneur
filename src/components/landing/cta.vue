@@ -52,7 +52,7 @@ text:before{
     }
     50%{
         opacity: 1;
-         content: "Legal service provider for the new economy in africa";
+         content: "Legal Service Provider For The New Economy In Africa";
     }
     65%{
         opacity: 0;
