@@ -13,10 +13,10 @@
 							<div class="relative mb-5">
 								<h2 class="pb-2.5 md:text-4xl text-3xl   max-w-full font-extrabold text-left">Contact us</h2>
 							</div>
-							<div class="text-sm w-[401px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</div>
+
 						
 							<form action="">
-								<div class="flex flex-col w-full mt-12">
+								<div class="flex flex-col w-full mt-6">
 									<label for="Phone" class="font-medium text-base text-litBlack mb-1"> Your name </label>
 									<div class="flex items-center w-full">
 										<input name="name" class="input w-full"	placeholder="Enter your name" v-model="detail.name"	required/>
@@ -90,10 +90,10 @@
 				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap">
 					<p class="font-medium text-sm">© 2022 Legalprenuer Company Limited, All rights reserved</p>
 
-					<div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
+					<!-- <div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
 						<p>Powered by</p>
 						<img src="../../assets/images/powered.svg" alt="powered by" class="bg-white px-2.5 py-1 md:ml-9 mt-2">
-					</div>
+					</div> -->
 				</div>
 			
 			</div>
