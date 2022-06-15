@@ -28,7 +28,7 @@ import footerBar from '@/components/landing/footer.vue'
 import { useMeta } from 'vue-meta'
 
 useMeta({
-	title: 'Legalprenuer Consulting',
+	title: 'Legalpreneur Attorneys & Consulting',
 	htmlAttrs: { lang: 'en', amp: true }
 })
 </script>

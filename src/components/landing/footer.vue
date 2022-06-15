@@ -87,8 +87,8 @@
 			</div>
 
 			<div class="border-t -mx-4">
-				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap">
-					<p class="font-medium text-sm">© 2022 Legalprenuer Company Limited, All rights reserved</p>
+				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-center items-center flex-wrap">
+					<p class="font-medium text-sm">© 2022 Legalpreneur Attorneys & Consulting. All rights reserved</p>
 
 					<!-- <div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
 						<p>Powered by</p>
@@ -97,7 +97,7 @@
 				</div>
 			
 			</div>
-		</section>P
+		</section>
 	</div>
 </template>
 
