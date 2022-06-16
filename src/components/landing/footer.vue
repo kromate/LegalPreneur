@@ -103,7 +103,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
+// https://script.google.com/macros/s/AKfycbyCpg_YJleqBds218T93947G3UUGzLXhzSwzXXWWQ8HaiuMJcQj_24le2GvNRYgJBPW/exec
 
 const detail = {
 	name: ref('').value,

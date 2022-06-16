@@ -3,7 +3,6 @@ module.exports = {
 		'./index.html',
 		'./src/**/*.{vue,js,ts,jsx,tsx}',
 	],
-	mode: 'jit',
 	theme: {
 		extend: {
 			colors: {
