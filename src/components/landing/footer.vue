@@ -1,8 +1,9 @@
+
 <template>
 	<div class="bg-dark px-4" id="footer">
 		<!-- <div class="relative">
 			<h2 class="pb-2.5 md:text-5xl text-3xl px-3  max-w-full font-extrabold text-center">About us</h2>
-		</div> -->
+		</div>-->
 
 		<section class="md:pt-28 pt-12 pb-0 md:px-0 text-white">
 			<div class="container items-center mx-auto mb-20">
@@ -10,69 +11,53 @@
 					<div class="w-full md:w-1/2 md:px-3">
 						<div class="w-full">
 							<div class="relative mb-5">
-								<h2
-									class="pb-2.5 md:text-4xl text-3xl max-w-full font-extrabold text-left"
-								>
-									Contact us
-								</h2>
+								<h2 class="pb-2.5 md:text-4xl text-3xl max-w-full font-extrabold text-left">Contact us</h2>
 							</div>
 
-							<form action="">
+							<form id="form" ref="form">
 								<div class="flex flex-col w-full mt-6">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>
-										Your name
-									</label>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Your name</label>
 									<div class="flex items-center w-full">
 										<input
-											name="name"
+											name="Name"
+											v-model="nameRef"
+											id="name"
 											class="input w-full"
 											placeholder="Enter your name"
-											v-model="detail.name"
 											required
 										/>
 									</div>
 								</div>
 								<div class="flex flex-col w-full mt-5">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>
-										Your email
-									</label>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Your email</label>
 									<div class="flex items-center w-full">
 										<input
-											name="name"
+											v-model="emailRef"
+											id="email"
+											name="Email"
 											type="email"
 											class="input w-full"
 											placeholder="Enter your email"
-											v-model="detail.email"
 											required
 										/>
 									</div>
 								</div>
 								<div class="flex flex-col w-full mt-5">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>
-										Message
-									</label>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Message</label>
 									<div class="flex items-center w-full">
 										<textarea
+											v-model="messageRef"
 											rows="6"
-											name="name"
+											name="Message"
+											id="Message"
 											class="input w-full"
 											placeholder="Type here..."
-											v-model="detail.name"
 											required
 										/>
 									</div>
 								</div>
 
-								<button class="btn mt-5">send</button>
+								<button class="btn mt-5 disabled:bg-slate-500" id="sumbitBtn">send</button>
 							</form>
 						</div>
 					</div>
@@ -127,17 +112,13 @@
 			</div>
 
 			<div class="border-t -mx-4">
-				<div
-					class="container mx-auto px-4 md:px-2 p-10 flex justify-center items-center flex-wrap"
-				>
-					<p class="font-medium text-sm">
-						© 2022 Legalpreneur Attorneys & Consulting. All rights reserved
-					</p>
+				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-center items-center flex-wrap">
+					<p class="font-medium text-sm">© 2022 Legalpreneur Attorneys & Consulting. All rights reserved</p>
 
 					<!-- <div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
 						<p>Powered by</p>
 						<img src="../../assets/images/powered.svg" alt="powered by" class="bg-white px-2.5 py-1 md:ml-9 mt-2">
-					</div> -->
+					</div>-->
 				</div>
 			</div>
 		</section>
@@ -145,19 +126,36 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-// https://script.google.com/macros/s/AKfycbyCpg_YJleqBds218T93947G3UUGzLXhzSwzXXWWQ8HaiuMJcQj_24le2GvNRYgJBPW/exec
+import { onMounted, ref } from "vue";
+const nameRef = ref("");
+const emailRef = ref("");
+const massageRef = ref("");
+onMounted(() => {
+	const form = document.querySelector("#form") as HTMLFormElement;
+	const btn = document.querySelector("#sumbitBtn") as HTMLButtonElement;
+	const scriptURL =
+		"https://script.google.com/macros/s/AKfycbyCpg_YJleqBds218T93947G3UUGzLXhzSwzXXWWQ8HaiuMJcQj_24le2GvNRYgJBPW/exec";
 
-const detail = {
-	name: ref('').value,
-	email: ref('').value,
-	message: ref('').value,
-};
+	form?.addEventListener("submit", (e) => {
+		console.log(e);
+		e.preventDefault();
+		if (btn != null) {
+			btn.innerHTML = "Sending...";
+			btn.disabled = true;
+		}
+
+		fetch(scriptURL, { method: "POST", body: new FormData(form) })
+			.then((response) => {
+				alert(`Message Sent Succesfully, ${response}`);
+			})
+			.catch((error) => alert(`An error occurred. Error: ${error}`));
+	});
+});
 </script>
 
 <style scoped>
 h2:before {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 50px;
 	height: 1px;
