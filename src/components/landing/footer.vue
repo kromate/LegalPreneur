@@ -144,7 +144,6 @@ onMounted(() => {
 		"https://script.google.com/macros/s/AKfycbyCpg_YJleqBds218T93947G3UUGzLXhzSwzXXWWQ8HaiuMJcQj_24le2GvNRYgJBPW/exec";
 
 	form?.addEventListener("submit", (e) => {
-		console.log(e);
 		e.preventDefault();
 		if (btn != null) {
 			btn.innerHTML = "Sending...";
