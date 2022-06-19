@@ -15,7 +15,8 @@
 				<div
 					v-for="n in cards"
 					:key="n.name"
-					class="w-[235px] h-[200px] shadow-block border-primary border-t-[5px] px-5 rounded-b-md flex flex-col justify-center items-center"
+					class="w-[235px] h-[200px] shadow-block border-primary border-t-[5px] px-5 rounded-b-md flex flex-col justify-center items-center cursor-pointer"
+					@click="openModal(n)"
 				>
 					<i
 						:class="[
@@ -33,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { cards } from '../../composables/modal';
+import { cards, openModal } from '../../composables/modal';
 </script>
 
 <style scoped>

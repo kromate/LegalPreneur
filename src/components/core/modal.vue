@@ -1,20 +1,25 @@
 <template>
 	<div v-if="show">
-		<transition appear @before-enter="bgBeforeEnter" @enter="bgEnter">
+		<transition
+			appear
+			@before-enter="bgBeforeEnter"
+			@enter="bgEnter"
+			@leave="bgLeave"
+		>
 			<div class="bg" @click="close($el)">
 				<div
-					class="bg-white border-2 border-primary shadow md:max-w-xl max-w-[94%] p-4 py-8 modal"
+					class="bg-white border-2 border-primary shadow md:max-w-xl max-w-[94%] px-6 py-12 modal relative"
 				>
-					<h1 class="text-center text-xl font-semibold mb-4">Technology Law</h1>
+					<i
+						class="las la-times absolute border-2 rounded-full p-1 border-primary cursor-pointer right-4 top-4"
+						@click="close($el)"
+					></i>
+
+					<h1 class="text-center text-xl font-semibold mb-4">
+						{{ modalDetails.name }}
+					</h1>
 					<p class="text-sm md:text-md text-center">
-						We support our clients in their most strategically important and
-						complex technology projects and transactions. We advise on the full
-						range of legal, regulatory and commercial issues relating to all
-						aspects of business technology and digital transformation. Our
-						team’s expertise includes technology transactions and corporate tech
-						projects. Our practical approach enables us to develop innovative
-						solutions to the most challenging and strategically significant
-						technology issues facing our clients.
+						{{ modalDetails.details }}
 					</p>
 				</div>
 			</div>
@@ -25,21 +30,17 @@
 <script setup>
 import gsap from 'gsap';
 import { ref } from 'vue';
+import { show, modalDetails } from '@/composables/modal';
 
-const show = ref(true);
 const timeline = gsap.timeline();
 const bgBeforeEnter = (el) => {
 	el.style.opacity = 0;
-};
-const modalBeforeEnter = (el) => {
-	el.style.opacity = 0;
-	el.style.transform = 'translateY(-500px)';
 };
 const bgEnter = (el, done) => {
 	timeline
 		.to(el, {
 			opacity: 1,
-			duration: 0.35,
+			duration: 0.2,
 		})
 		.fromTo(
 			'.modal',
@@ -50,25 +51,32 @@ const bgEnter = (el, done) => {
 			{
 				opacity: 1,
 				y: 0,
-				duration: 0.35,
+				duration: 0.2,
 				onComplete: done,
 			}
 		);
 };
-const modalEnter = (el, done) => {
-	timeline.to(el, {
-		opacity: 1,
-		y: 0,
-		scale: 1,
-		duration: 1,
-		onComplete: done,
-	});
+
+const bgLeave = () => {
+	console.log('leaving');
 };
 
 const close = (el) => {
-	timeline.reverse().then(() => {
-		el.style.display = 'none';
-	});
+	timeline
+		.to('.modal', {
+			opacity: 0,
+			y: -200,
+			duration: 0.2,
+		})
+		.to('.bg', { opacity: 0, duration: 0.1 })
+		.then(() => {
+			console.log('ggmmmmm');
+			show.value = false;
+		});
+	// timeline.reverse().then(() => {
+	// 	show.value = false;
+	// 	modalDetails.value = '';
+	// });
 };
 </script>
 
@@ -85,7 +93,7 @@ const close = (el) => {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .slide-enter-active,
