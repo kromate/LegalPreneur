@@ -57,7 +57,7 @@
 									</div>
 								</div>
 
-								<button class="btn mt-5 disabled:bg-slate-500" id="sumbitBtn">send</button>
+								<button class="btn mt-5 disabled:!bg-slate-500" id="sumbitBtn">send</button>
 							</form>
 						</div>
 					</div>
@@ -129,7 +129,14 @@
 import { onMounted, ref } from "vue";
 const nameRef = ref("");
 const emailRef = ref("");
-const massageRef = ref("");
+const messageRef = ref("");
+
+const clearBox = () => {
+	nameRef.value = "";
+	emailRef.value = "";
+	messageRef.value = "";
+};
+
 onMounted(() => {
 	const form = document.querySelector("#form") as HTMLFormElement;
 	const btn = document.querySelector("#sumbitBtn") as HTMLButtonElement;
@@ -146,9 +153,14 @@ onMounted(() => {
 
 		fetch(scriptURL, { method: "POST", body: new FormData(form) })
 			.then((response) => {
+				clearBox();
+				btn.innerHTML = "send";
+				btn.disabled = false;
 				alert(`Message Sent Succesfully, ${response}`);
 			})
-			.catch((error) => alert(`An error occurred. Error: ${error}`));
+			.catch((error) => {
+				alert(`An error occurred. Error: ${error}`);
+			});
 	});
 });
 </script>
