@@ -88,7 +88,7 @@
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-phone text-primary text-2xl mr-3"></i>
-								<span class="text-sm">+234 812 345 6786</span>
+								<span class="text-sm">+234 815 414 1095</span>
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-envelope text-primary text-2xl mr-3"></i>
