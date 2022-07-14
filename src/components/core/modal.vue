@@ -70,7 +70,6 @@ const close = (el) => {
 		})
 		.to('.bg', { opacity: 0, duration: 0.1 })
 		.then(() => {
-			console.log('ggmmmmm');
 			show.value = false;
 		});
 	// timeline.reverse().then(() => {
