@@ -22,7 +22,7 @@
 									<label
 										for="Phone"
 										class="font-medium text-base text-litBlack mb-1"
-										>Your name</label
+									>Your name</label
 									>
 									<div class="flex items-center w-full">
 										<input
@@ -39,7 +39,7 @@
 									<label
 										for="Phone"
 										class="font-medium text-base text-litBlack mb-1"
-										>Your email</label
+									>Your email</label
 									>
 									<div class="flex items-center w-full">
 										<input
@@ -57,7 +57,7 @@
 									<label
 										for="Phone"
 										class="font-medium text-base text-litBlack mb-1"
-										>Message</label
+									>Message</label
 									>
 									<div class="flex items-center w-full">
 										<textarea
@@ -101,12 +101,6 @@
 							<div class="flex items-center mt-4 gap-5">
 								<a href="#">
 									<i
-										class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
-									></i>
-								</a>
-
-								<a href="#">
-									<i
 										class="lab la-twitter text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
 								</a>
@@ -120,6 +114,11 @@
 								<a href="#">
 									<i
 										class="lab la-instagram text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
+									></i>
+								</a>
+								<a href="#">
+									<i
+										class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
 								</a>
 							</div>
@@ -147,42 +146,42 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
-const nameRef = ref('');
-const emailRef = ref('');
-const messageRef = ref('');
+import { onMounted, ref } from 'vue'
+const nameRef = ref('')
+const emailRef = ref('')
+const messageRef = ref('')
 
 const clearBox = () => {
-	nameRef.value = '';
-	emailRef.value = '';
-	messageRef.value = '';
-};
+	nameRef.value = ''
+	emailRef.value = ''
+	messageRef.value = ''
+}
 
 onMounted(() => {
-	const form = document.querySelector('#form') as HTMLFormElement;
-	const btn = document.querySelector('#sumbitBtn') as HTMLButtonElement;
+	const form = document.querySelector('#form') as HTMLFormElement
+	const btn = document.querySelector('#sumbitBtn') as HTMLButtonElement
 	const scriptURL =
-		'https://script.google.com/macros/s/AKfycbwXC8KitbzvW-wAj9c_8A-3qmE3ApgLC84_UhkXijL_k8jI3v49-XwiMHt_EUReRB7e/exec';
+		'https://script.google.com/macros/s/AKfycbwXC8KitbzvW-wAj9c_8A-3qmE3ApgLC84_UhkXijL_k8jI3v49-XwiMHt_EUReRB7e/exec'
 
 	form?.addEventListener('submit', (e) => {
-		e.preventDefault();
+		e.preventDefault()
 		if (btn != null) {
-			btn.innerHTML = 'Sending...';
-			btn.disabled = true;
+			btn.innerHTML = 'Sending...'
+			btn.disabled = true
 		}
 
 		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 			.then((response) => {
-				clearBox();
-				btn.innerHTML = 'send';
-				btn.disabled = false;
-				alert(`Message Sent Succesfully, ${response}`);
+				clearBox()
+				btn.innerHTML = 'send'
+				btn.disabled = false
+				alert(`Message Sent Succesfully, ${response}`)
 			})
 			.catch((error) => {
-				alert(`An error occurred. Error: ${error}`);
-			});
-	});
-});
+				alert(`An error occurred. Error: ${error}`)
+			})
+	})
+})
 </script>
 
 <style scoped>
