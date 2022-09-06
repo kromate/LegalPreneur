@@ -99,24 +99,24 @@
 						<div class="md:ml-auto flex flex-col mt-7">
 							<h5 class="text-xl font-semibold">Follow us:</h5>
 							<div class="flex items-center mt-4 gap-5">
-								<a href="#">
+								<a target="_blank" href="https://twitter.com/LegalpreneurLP?t=MFxbCFkaUnlUl8G3shel2A&s=09">
 									<i
 										class="lab la-twitter text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
 								</a>
 
-								<a href="#">
+								<a target="_blank" href="https://www.linkedin.com/company/legalpreneurconsulting">
 									<i
 										class="lab la-linkedin text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
 								</a>
 
-								<a href="#">
+								<a target="_blank" href="https://instagram.com/legalpreneurlp?igshid=YmMyMTA2M2Y=">
 									<i
 										class="lab la-instagram text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
 								</a>
-								<a href="#">
+								<a target="_blank" href="#">
 									<i
 										class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
 									></i>
