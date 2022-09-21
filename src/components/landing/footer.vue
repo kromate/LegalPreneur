@@ -84,7 +84,7 @@
 							<h5 class="text-xl font-semibold">Contact info:</h5>
 							<div class="flex items-center mt-4">
 								<i class="las la-map-marker-alt text-primary text-2xl mr-3"></i>
-								<span class="text-sm">Lagos, Nigeria</span>
+								<span class="text-sm">3, Rabat way, Wuse, Abuja, FCT</span>
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-phone text-primary text-2xl mr-3"></i>
@@ -129,11 +129,16 @@
 
 			<div class="border-t -mx-4">
 				<div
-					class="container mx-auto px-4 md:px-2 p-10 flex justify-center items-center flex-wrap"
+					class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap gap-6"
 				>
 					<p class="font-medium text-sm">
 						© 2022 Legalpreneur Attorneys & Consulting. All rights reserved
 					</p>
+
+					<div class="flex items-center gap-4 font-medium text-sm">
+						<a href="https://drive.google.com/file/d/1pSm3g_eHdlZQa5llDQBmYthemPmNQJnE/view" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+						<a href="https://drive.google.com/file/d/1bZllGe3luRQeb-Q_G3Yfa3RUBY0v7xw6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+					</div>
 
 					<!-- <div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
 						<p>Powered by</p>
