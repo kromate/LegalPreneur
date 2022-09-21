@@ -92,7 +92,7 @@
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-envelope text-primary text-2xl mr-3"></i>
-								<span class="text-sm">contact@legalprenuerconsulting.com</span>
+								<a href="mailto:contact@legalprenuerconsulting.com" target="_blank" class="text-sm">contact@legalprenuerconsulting.com</a>
 							</div>
 						</div>
 
