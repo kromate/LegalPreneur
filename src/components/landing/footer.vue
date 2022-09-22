@@ -1,8 +1,5 @@
 <template>
 	<div class="bg-dark px-4" id="footer">
-		<div class="relative">
-			<h2 class="pb-2.5 md:text-5xl text-3xl px-3  max-w-full font-extrabold text-center">About us</h2>
-		</div>
 
 		<section class="md:pt-28 pt-12 pb-0 md:px-0 text-white">
 			<div class="container items-center mx-auto mb-20">
