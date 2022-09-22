@@ -137,10 +137,6 @@
 						<a href="https://drive.google.com/file/d/1bZllGe3luRQeb-Q_G3Yfa3RUBY0v7xw6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
 					</div>
 
-					<!-- <div class="flex flex-col md:flex-row md:items-center justify-start items-start mt-3">
-						<p>Powered by</p>
-						<img src="../../assets/images/powered.svg" alt="powered by" class="bg-white px-2.5 py-1 md:ml-9 mt-2">
-					</div>-->
 				</div>
 			</div>
 		</section>
