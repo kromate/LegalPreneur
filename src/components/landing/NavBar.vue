@@ -34,10 +34,8 @@
 				<a href="#choose"	class="btn-secondary pc hover:text-primary">Why Choose Us</a>
 				<a href="#values"	class="btn-secondary pc hover:text-primary">Our Values</a>
 				<a href="#exp"	class="btn-secondary pc hover:text-primary" >Expertise</a>
-		
 			</div>
-
-		
+			
 		</div>
 	</nav>
 </template>
