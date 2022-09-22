@@ -17,7 +17,6 @@
 				<i class="las la-times" v-else></i>
 			</div>
 
-
 			<transition name="slideUp">
 				<div v-if="showMenu" class="w-full gap-4 absolute bg-[#ffffff] shadow-2xl top-14 inset-x-0 p-4">
 					<a href="#"	 @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Home</a>
