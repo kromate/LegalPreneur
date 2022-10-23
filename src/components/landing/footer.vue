@@ -79,17 +79,17 @@
 					<div class="w-full md:w-1/2 pb-12 md:p-0 mt-12 md:pl-12">
 						<div class="md:ml-auto flex flex-col">
 							<h5 class="text-xl font-semibold">Contact info:</h5>
-							<div class="flex items-center mt-4">
+							<!-- <div class="flex items-center mt-4">
 								<i class="las la-map-marker-alt text-primary text-2xl mr-3"></i>
 								<span class="text-sm">3, Rabat way, Wuse, Abuja, FCT</span>
-							</div>
+							</div> -->
 							<div class="flex items-center mt-4">
 								<i class="las la-phone text-primary text-2xl mr-3"></i>
 								<span class="text-sm">+234 815 414 1095</span>
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-envelope text-primary text-2xl mr-3"></i>
-								<a href="mailto:contact@legalprenuerconsulting.com" target="_blank" class="text-sm">contact@legalprenuerconsulting.com</a>
+								<a href="mailto:contact@legalpreneurconsulting.com" target="_blank" class="text-sm">contact@legalpreneurconsulting.com</a>
 							</div>
 						</div>
 
