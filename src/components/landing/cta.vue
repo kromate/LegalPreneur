@@ -32,14 +32,17 @@ text:before{
 @keyframes changeBG {
     0%{
         opacity: 1;
+        color: white;
         background-image:  var(--clr-bgOne);
     }
     50%{
+        color: black;
          background-image:  var(--clr-bgTwo);
     }
     100%{
         opacity: 1;
-         background-image:  var(--clr-bgOne);
+        color: white;
+        background-image:  var(--clr-bgOne);
     }
 }
 @keyframes changeText {

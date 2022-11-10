@@ -4,15 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --clr-bgOne: url('../../assets/images/bg.png');
-    --clr-bgTwo: url('../../assets/images/bg2.png');
+:root {
+  --clr-bgOne: url('../../assets/images/bg1.png');
+  --clr-bgTwo: url('../../assets/images/bg2.png');
 }
-@media  (max-width:640px) {
-    :root{
+@media (max-width: 640px) {
+  :root {
     --clr-bgOne: url('../../assets/images/mbg.png');
     --clr-bgTwo: url('../../assets/images/mbg2.png');
-}
+  }
 }
 
 * {
@@ -55,10 +55,10 @@ html {
   .card {
     @apply rounded-md shadow-xl bg-white;
   }
-  .badge{
-  @apply  text-xs px-3  rounded-full py-[0.2rem] flex justify-center items-center
+  .badge {
+    @apply text-xs px-3  rounded-full py-[0.2rem] flex justify-center items-center;
   }
-  .input{
-    @apply px-4 py-3 font-medium rounded-[10px] max-w-[504px] text-dark
+  .input {
+    @apply px-4 py-3 font-medium rounded-[10px] max-w-[504px] text-dark;
   }
 }
