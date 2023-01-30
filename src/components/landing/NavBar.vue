@@ -24,6 +24,7 @@
 					<a href="#choose" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Why Choose Us</a>
 					<a href="#values" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Our Values</a>
 					<a href="#exp" @click="toggleMenu()"	class="btn rounded-none py-3 w-full mt-2">Expertise</a>
+					<a href="https://blog.legalpreneurconsulting.com/" target="_blank"	class="btn rounded-none py-3 w-full mt-2" >News & Publications</a>
 				
 				</div>
 			</transition>
@@ -34,6 +35,7 @@
 				<a href="#choose"	class="btn-secondary pc hover:text-primary">Why Choose Us</a>
 				<a href="#values"	class="btn-secondary pc hover:text-primary">Our Values</a>
 				<a href="#exp"	class="btn-secondary pc hover:text-primary" >Expertise</a>
+				<a href="https://blog.legalpreneurconsulting.com/" target="_blank"	class="btn-secondary pc hover:text-primary" >News & Publications</a>
 			</div>
 			
 		</div>
