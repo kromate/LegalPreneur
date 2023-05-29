@@ -159,7 +159,7 @@ onMounted(() => {
 	const form = document.querySelector('#form') as HTMLFormElement
 	const btn = document.querySelector('#sumbitBtn') as HTMLButtonElement
 	const scriptURL =
-		'https://script.google.com/macros/s/AKfycbwXC8KitbzvW-wAj9c_8A-3qmE3ApgLC84_UhkXijL_k8jI3v49-XwiMHt_EUReRB7e/exec'
+		'https://script.google.com/macros/s/AKfycbyCpg_YJleqBds218T93947G3UUGzLXhzSwzXXWWQ8HaiuMJcQj_24le2GvNRYgJBPW/exec'
 
 	form?.addEventListener('submit', (e) => {
 		e.preventDefault()
