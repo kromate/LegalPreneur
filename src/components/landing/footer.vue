@@ -129,7 +129,7 @@
 					class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap gap-6"
 				>
 					<p class="font-medium text-sm">
-						© 2022 Legalpreneur Attorneys & Consulting. All rights reserved
+						© 2023 Legalpreneur Attorneys & Consulting. All rights reserved
 					</p>
 
 					<div class="flex items-center gap-4 font-medium text-sm">
@@ -173,10 +173,10 @@ onMounted(() => {
 				clearBox()
 				btn.innerHTML = 'send'
 				btn.disabled = false
-				alert(`Message Sent Succesfully, ${response}`)
+				alert(`Message Sent Succesfully`)
 			})
 			.catch((error) => {
-				alert(`An error occurred. Error: ${error}`)
+				alert(`An error occurred. Error`)
 			})
 	})
 })
