@@ -91,6 +91,10 @@
 								<i class="las la-envelope text-primary text-2xl mr-3"></i>
 								<a href="mailto:contact@legalpreneurconsulting.com" target="_blank" class="text-sm">contact@legalpreneurconsulting.com</a>
 							</div>
+							<div class="flex items-center mt-4">
+								<i class="las la-user text-primary text-2xl mr-3"></i>
+								<a href="https://calendly.com/legalpreneurlp" target="_blank" class="text-sm">Book A Consultation session</a>
+							</div>
 						</div>
 
 						<div class="md:ml-auto flex flex-col mt-7">
