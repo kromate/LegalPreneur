@@ -177,7 +177,6 @@ onMounted(() => {
 				clearBox()
 				btn.innerHTML = 'send'
 				btn.disabled = false
-				alert(`Message Sent Succesfully`)
 			})
 			.catch((error) => {
 				alert(`An error occurred. Error`)
