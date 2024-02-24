@@ -19,10 +19,11 @@
                                  
 							</p>
 							<div class="relative flex flex-col sm:flex-row sm:space-x-4">
-								<router-link to="#footer" class="text-primary mt-11 font-semibold flex items-center">
+								<a href="https://calendly.com/legalpreneurlp" target="_blank" class="text-primary mt-11 font-semibold flex items-center ">
 									Contact us for a free consultation! 
 									<i class="las la-arrow-right text-xl ml-4"></i>
-								</router-link>
+								</a>
+							
 							</div>
 						</div>
 					</div>
