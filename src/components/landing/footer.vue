@@ -7,65 +7,28 @@
 					<div class="w-full md:w-1/2 md:px-3">
 						<div class="w-full">
 							<div class="relative mb-5">
-								<h2
-									class="pb-2.5 md:text-4xl text-3xl max-w-full font-extrabold text-left"
-								>
+								<h2 class="pb-2.5 md:text-4xl text-3xl max-w-full font-extrabold text-left">
 									Contact us
 								</h2>
 							</div>
 
 							<form id="form" ref="form">
 								<div class="flex flex-col w-full mt-6">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>Your name</label
-									>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Your name</label>
 									<div class="flex items-center w-full">
-										<input
-											name="Name"
-											v-model="nameRef"
-											id="name"
-											class="input w-full"
-											placeholder="Enter your name"
-											required
-										/>
+										<input name="Name" v-model="nameRef" id="name" class="input w-full" placeholder="Enter your name" required />
 									</div>
 								</div>
 								<div class="flex flex-col w-full mt-5">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>Your email</label
-									>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Your email</label>
 									<div class="flex items-center w-full">
-										<input
-											v-model="emailRef"
-											id="email"
-											name="Email"
-											type="email"
-											class="input w-full"
-											placeholder="Enter your email"
-											required
-										/>
+										<input v-model="emailRef" id="email" name="Email" type="email" class="input w-full" placeholder="Enter your email" required />
 									</div>
 								</div>
 								<div class="flex flex-col w-full mt-5">
-									<label
-										for="Phone"
-										class="font-medium text-base text-litBlack mb-1"
-									>Message</label
-									>
+									<label for="Phone" class="font-medium text-base text-litBlack mb-1">Message</label>
 									<div class="flex items-center w-full">
-										<textarea
-											v-model="messageRef"
-											rows="6"
-											name="Message"
-											id="Message"
-											class="input w-full"
-											placeholder="Type here..."
-											required
-										/>
+										<textarea v-model="messageRef" rows="6" name="Message" id="Message" class="input w-full" placeholder="Type here..." required />
 									</div>
 								</div>
 
@@ -77,12 +40,27 @@
 					</div>
 
 					<div class="w-full md:w-1/2 pb-12 md:p-0 mt-12 md:pl-12">
-						<div class="md:ml-auto flex flex-col">
+						<div class="md:ml-auto flex flex-col gap-2">
+							<h5 class="text-xl font-semibold">Address:</h5>
+
+							<p class="flex items-center mt-4 text-sm">
+								Lagos <br> 
+
+								Pent floor, Lamlat House, <br>
+								270, Ikorodu road, Beside Fidson Healthcare PLC, Lagos.
+							</p>
+
+							<p class="flex items-center mt-4 text-sm">
+								Abuja <br>
+
+								3, Rabat way, Wuse, <br>
+								Federal Capital Territory, Abuja.
+							</p>
+
+						</div>
+						<div class="md:ml-auto flex flex-col mt-7">
 							<h5 class="text-xl font-semibold">Contact info:</h5>
-							<!-- <div class="flex items-center mt-4">
-								<i class="las la-map-marker-alt text-primary text-2xl mr-3"></i>
-								<span class="text-sm">3, Rabat way, Wuse, Abuja, FCT</span>
-							</div> -->
+
 							<div class="flex items-center mt-4">
 								<i class="las la-phone text-primary text-2xl mr-3"></i>
 								<span class="text-sm">+234 815 414 1095</span>
@@ -93,7 +71,7 @@
 							</div>
 							<div class="flex items-center mt-4">
 								<i class="las la-user text-primary text-2xl mr-3"></i>
-								<a href="https://calendly.com/legalpreneurlp" target="_blank" class="text-sm">Book a consultation session</a>
+								<a href="https://calendly.com/legalpreneurlp" target="_blank" class="text-sm underline">Book a consultation session</a>
 							</div>
 						</div>
 
@@ -101,26 +79,18 @@
 							<h5 class="text-xl font-semibold">Follow us:</h5>
 							<div class="flex items-center mt-4 gap-5">
 								<a target="_blank" href="https://twitter.com/LegalpreneurLP?t=MFxbCFkaUnlUl8G3shel2A&s=09">
-									<i
-										class="lab la-twitter text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
-									></i>
+									<i class="lab la-twitter text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
 								</a>
 
 								<a target="_blank" href="https://www.linkedin.com/company/legalpreneurconsulting">
-									<i
-										class="lab la-linkedin text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
-									></i>
+									<i class="lab la-linkedin text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
 								</a>
 
 								<a target="_blank" href="https://instagram.com/legalpreneurlp?igshid=YmMyMTA2M2Y=">
-									<i
-										class="lab la-instagram text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
-									></i>
+									<i class="lab la-instagram text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
 								</a>
 								<a target="_blank" href="#">
-									<i
-										class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"
-									></i>
+									<i class="lab la-facebook text-white bg-primary w-8 h-8 text-2xl rounded-lg flex justify-center items-center"></i>
 								</a>
 							</div>
 						</div>
@@ -129,9 +99,7 @@
 			</div>
 
 			<div class="border-t -mx-4">
-				<div
-					class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap gap-6"
-				>
+				<div class="container mx-auto px-4 md:px-2 p-10 flex justify-between items-center flex-wrap gap-6">
 					<p class="font-medium text-sm">
 						© 2023 Legalpreneur Attorneys & Consulting. All rights reserved
 					</p>
@@ -179,7 +147,7 @@ onMounted(() => {
 				btn.disabled = false
 			})
 			.catch((error) => {
-				alert(`An error occurred. Error`)
+				alert('An error occurred. Error')
 			})
 	})
 })
