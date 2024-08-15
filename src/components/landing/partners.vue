@@ -1,7 +1,7 @@
 <template>
 	<section class="bg-blue p-12 px-4">
 		<div class="container mx-auto ">
-			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our trusted partners. </h1>
+			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our Trusted Partners. </h1>
 			<div class="relative marquee-container flex gap-12">
 				<div class="marquee flex items-center justify-between  mt-0  flex-nowrap gap-12">
 					<!-- <div class="flex items-center justify-center"> -->
