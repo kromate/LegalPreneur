@@ -6,7 +6,7 @@
 			<router-link
 				to="/"
 				class="relative flex items-center w-auto text-xl font-extrabold tracking-widest text-blue select-none"
-			><img src="@/assets/images/logo.svg" alt="logo" class="h-8 md:h-auto"></router-link>
+			><img src="@/assets/images/logo.png" alt="logo" class="h-8 md:h-10"></router-link>
 
 			<div
 				@click="showMenu = !showMenu"
