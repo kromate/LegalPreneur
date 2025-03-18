@@ -1,26 +1,26 @@
 <template>
 	<section class="bg-blue p-12 px-4">
 		<div class="container mx-auto ">
-			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our trusted partners. </h1>
+			<h1 class="text-xl font-bold tracking-wide text-center text-dark mb-7"> Our Trusted Partners. </h1>
 			<div class="relative marquee-container flex gap-12">
 				<div class="marquee flex items-center justify-between  mt-0  flex-nowrap gap-12">
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/1.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/emurgo.png" alt="emurgo logo" class="block object-contain h-20">
 					<!-- </div> -->
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/2.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/Adaverse.jpeg" alt="Adaverse logo" class="block object-contain h-20">
 					<!-- </div> -->
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/3.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/convexity.png" alt="convexity logo" class="block object-contain h-20">
 					<!-- </div> -->
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/4.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/jego.png" alt="jego logo" class="block object-contain h-20">
 					<!-- </div> -->
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/5.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/hyvetech.png" alt="hyvetech logo" class="block object-contain h-20">
 					<!-- </div> -->
 					<!-- <div class="flex items-center justify-center"> -->
-					<img src="@/assets/images/partners/6.png" alt="Disney Plus" class="block object-contain h-20">
+					<img src="/logo/hedera.png" alt="hedera logo" class="block object-contain h-20">
 					<!-- </div> -->
 				</div>
 			</div>
