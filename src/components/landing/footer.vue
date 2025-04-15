@@ -73,6 +73,10 @@
 								<i class="las la-user text-primary text-2xl mr-3"></i>
 								<a href="https://calendly.com/legalpreneurlp" target="_blank" class="text-sm underline">Book a consultation session</a>
 							</div>
+							<div class="flex items-center mt-4">
+								<i class="lab la-whatsapp text-primary text-2xl mr-3"></i>
+								<a href="https://wa.me/+2348154141095" target="_blank" class="text-sm underline">Contact us on WhatsApp</a>
+							</div>
 						</div>
 
 						<div class="md:ml-auto flex flex-col mt-7">
